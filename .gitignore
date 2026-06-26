@@ -1,0 +1,29 @@
+# macOS
+.DS_Store
+
+# STM32 CubeIDE 编译产物
+**/Debug/
+**/Release/
+**/Binary/*.hex
+**/Binary/*.bin
+**/Binary/*.elf
+**/Binary/*.map
+
+# Android / Gradle
+**/.gradle/
+**/.gradle-build/
+**/build/
+**/local.properties
+**/.idea/
+*.iml
+.externalNativeBuild
+.cxx
+/captures
+
+# Python
+**/.venv/
+**/__pycache__/
+*.pyc
+
+# 编辑器
+.cursor/

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.amap.api.navi.AMapNaviView
+        android:id="@+id/navi_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <EditText
+            android:id="@+id/et_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="输入目的地"
+            android:background="@android:color/white"
+            android:padding="12dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_result"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="#fff"/>
+
+        <LinearLayout
+            android:id="@+id/layout_nav_action"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:background="#CC2973FE">
+
+            <ImageView
+                android:id="@+id/iv_nav_action"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_nav_unknown"
+                android:contentDescription="导航方向图标"/>
+
+            <TextView
+                android:id="@+id/tv_nav_action"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingStart="12dp"
+                android:text="等待导航动作"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_start_navi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="步行导航"
+            android:background="#FF2973FE"
+            android:textColor="@android:color/white"/>
+
+        <Button
+            android:id="@+id/btn_start_ride_navi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="骑行导航"
+            android:background="#FF2973FE"
+            android:textColor="@android:color/white"/>
+
+        <Button
+            android:id="@+id/btn_connect_bluetooth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="连接蓝牙"
+            android:background="#FF2973FE"
+            android:textColor="@android:color/white"/>
+
+        <Button
+            android:id="@+id/btn_connect_mac_ble"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="连接 ATK-BLE04"
+            android:background="#FF2973FE"
+            android:textColor="@android:color/white"/>
+
+        <Button
+            android:id="@+id/btn_send_atk_test"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="发送 ATK 测试"
+            android:background="#FF2973FE"
+            android:textColor="@android:color/white"/>
+
+    </LinearLayout>
+
+</FrameLayout>
